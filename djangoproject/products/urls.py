@@ -1,7 +1,7 @@
-from django.urls import path
-from . import views
-# re_path is the new alias for url(regex)
+from rest_framework import routers
+from .api import ProductViewSet
 
-urlpatterns = [
-    path('', views.index, name='index' )
-];
+router =routers.DefaultRouter()
+router.register('api/products', ProductViewSet, 'products')
+
+urlpatterns = router.urls
