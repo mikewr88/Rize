@@ -1,0 +1,23 @@
+.navbar{
+  height: 100px;
+  width: 100vw;
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.nav-button a{
+  color: white;
+
+}
+a{
+  text-decoration: none;
+}
