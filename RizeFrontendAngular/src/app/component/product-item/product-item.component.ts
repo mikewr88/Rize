@@ -12,4 +12,9 @@ export class ProductItemComponent implements OnInit {
   ngOnInit() {
   }
 
+
+    productClicked = (product) =>{
+      console.log(product.id);
+    }
+
 }

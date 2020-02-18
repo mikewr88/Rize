@@ -16,6 +16,8 @@ import { ContactComponent } from './component/pages/contact/contact.component';
 import { FooterComponent } from './component/layout/footer/footer.component';
 
 @NgModule({
+  //Whenever You create a new component place the component name in declarations
+  //Using the CLI to generate components auto inputs them into this file
   // The set of components, directives, and pipes (declarables) that belong to this module.
   declarations: [
     AppComponent,
@@ -26,6 +28,7 @@ import { FooterComponent } from './component/layout/footer/footer.component';
     ContactComponent,
     FooterComponent
   ],
+  //importing a module needs to be written in imports
   imports: [
     BrowserModule,
     HttpClientModule,
