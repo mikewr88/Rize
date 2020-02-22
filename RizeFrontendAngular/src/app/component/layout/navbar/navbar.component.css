@@ -1,23 +1,91 @@
-.navbar{
+.navbar {
   height: 100px;
-  width: 100vw;
-  background: black;
-  color: white;
+  margin: 0;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
 }
-ul{
+
+#buttons {
+  list-style: none;
   display: flex;
-  flex-direction: row;
-
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 100px;
 }
 
-.nav-button a{
-  color: white;
-
+#buttons li {
+  padding: 15px;
 }
-a{
-  text-decoration: none;
+
+#buttons li a {
+  color: black;
+  transition: color .2s ease;
+}
+
+#buttons li a:before {
+  content: '[';
+  font-size: 1.2em;
+  opacity: 0;
+  position: relative;
+  left: 5px;
+  top: 1px;
+  transition: opacity .2s ease, left .2s ease;
+}
+
+#buttons li a:after {
+  content: ']';
+  font-size: 1.2em;
+  opacity: 0;
+  position: relative;
+  left: -5px;
+  top: 1px;
+  transition: opacity .2s ease, left .2s ease;
+}
+
+#buttons li a:hover {
+  color: rgb(45, 104, 214);
+}
+
+#buttons li a:hover:after {
+  opacity: 1;
+  left: 3px;
+}
+
+#buttons li a:hover:before {
+  opacity: 1;
+  left: -3px;
+}
+
+.nav-piece1 {
+  top: 0%;
+  box-sizing: border-box;
+  background-color: rgb(244, 244, 244);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0px 30px;
+  width: 56%;
+  height: 100%;
+  margin: 0;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.nav-piece2 {
+  box-sizing: border-box;
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 100px;
+  right: 0%;
+  padding: 0px 30px;
+  width: 56%;
+  height: 100%;
+  margin: 0;
+  clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+  transition: clip-path .3s linear;
 }
