@@ -2,10 +2,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   right: 0;
   left: 0;
   height: 200px;
-  background: blue;
+  color: white;
+  background: rgb(37, 35, 64);
 }

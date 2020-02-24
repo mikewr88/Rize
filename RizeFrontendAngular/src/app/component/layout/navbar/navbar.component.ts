@@ -14,15 +14,9 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
 
-      var navpiece = document.querySelector(".nav-piece2");
       document.addEventListener("scroll", (scrollevent)=> {
 
-        if (window.scrollY <= 100){
-          navpiece.style.top = (100 - window.scrollY) + "px";
-        }else{
-          navpiece.style.top = "0px";
 
-        }
       })
 
 
