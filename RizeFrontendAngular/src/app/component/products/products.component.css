@@ -1,3 +1,32 @@
+h1 {
+  font-size: 50px;
+  color: var(--mainblue);
+  margin-top: 50px;
+  text-align: center;
+  position: relative;
+}
+
+h1:after {
+  content: '';
+  width: 80%;
+  height: 5px;
+  background-color: var(--maingold);
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+}
+
 .products {
-  height: 200vh;
+  height: 120vh;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 0px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+
+app-product-item {
+  width: 30%;
 }

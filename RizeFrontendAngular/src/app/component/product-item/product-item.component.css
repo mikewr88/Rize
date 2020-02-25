@@ -1,0 +1,24 @@
+.productItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(247, 247, 247);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 20px;
+  /* border-right: 2px solid black;
+  border-left: 2px solid black; */
+}
+
+.productItem h1, .productItem p {
+  color: var(--mainblue);
+}
+
+.productItem h2 {
+  color: var(--maingold);
+}
+
+.productItem img {
+  width: 60%;
+}

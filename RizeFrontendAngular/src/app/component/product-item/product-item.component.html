@@ -1,3 +1,8 @@
-<p (click)="productClicked(product)">
-  {{product.name}} {{product.price}}
-</p>
+<div class="productItem">
+  <h1 (click)="productClicked(product)">
+    {{product.name}}
+  </h1>
+  <h2>${{product.price}}</h2>
+  <img src="../../assets/apparelImages/{{product.imgurl}}">
+  <p>{{product.description}}</p>
+</div>
