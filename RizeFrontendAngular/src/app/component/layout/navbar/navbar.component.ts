@@ -15,7 +15,12 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
 
       document.addEventListener("scroll", (scrollevent)=> {
+        if (window.pageYOffset >= 100){
+          document.querySelector(".navIcons").classList.add("noPointer");
+        }else{
+          document.querySelector(".navIcons").classList.remove("noPointer");
 
+        }
 
       })
 

@@ -29,11 +29,47 @@
   z-index: 100;
 }
 
+.navIcons {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navIcons.noPointer {
+  pointer-events: none;
+}
+
+.navIcons svg {
+  margin: 15px;
+  width: 40px;
+  height: 40px;
+  color: black;
+  cursor: pointer;
+}
+
+.navIcons svg:hover path {
+  fill: var(--maingold);
+}
+
 .bottomNavHelper {
   height: 100px;
   width: 100%;
   background-color: var(--mainblue);
   position: relative;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottomNavHelper h1 {
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  font-style: italic;
 }
 
 #buttons {
@@ -49,7 +85,7 @@
 }
 
 #buttons li a {
-  color: black;
+  color: white;
   font-size: 18px;
   transition: color .2s ease;
 }
@@ -76,7 +112,7 @@
 
 #buttons li a:hover {
   /* color: rgb(45, 104, 214); */
-  color: var(--maingold);
+  color: var(--mainblue);
 }
 
 #buttons li a:hover:after {
@@ -91,7 +127,8 @@
 
 .nav-piece1 {
   box-sizing: border-box;
-  background-color: rgb(244, 244, 244);
+  /* background-color: rgb(244, 244, 244); */
+  background-color: var(--maingold);
   display: flex;
   align-items: center;
   padding: 0px 30px;
@@ -104,11 +141,14 @@
 
 .nav-piece1 h1 {
   font-size: 50px;
+  color: white;
+  margin-left: 100px;
 }
 
 .nav-piece2 {
   box-sizing: border-box;
-  background-color: rgb(244, 244, 244);
+  /* background-color: rgb(244, 244, 244); */
+  background-color: var(--maingold);
   display: flex;
   align-items: center;
   justify-content: flex-end;
