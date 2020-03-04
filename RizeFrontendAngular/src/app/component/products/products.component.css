@@ -7,6 +7,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  clip-path: polygon()
 }
 
 .headerRow {
@@ -28,13 +29,10 @@ header {
 }
 
 .leftHeaderArea {
-  background-image: url('../../../assets/apparelImages/HeaderSweat.png');
-  width: 40%;
-  /* clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%); */
+  width: 33%;
 }
 
 .middleHeaderArea {
-  background-image: url('../../../assets/apparelImages/smoothroyaltyshirt.jpg');
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -54,9 +52,31 @@ header {
 }
 
 .rightHeaderArea {
+  width: 33%;
+}
+
+.blue .leftHeaderArea {
+  background-image: url('../../../assets/apparelImages/HeaderSweat.png');
+}
+
+.blue .middleHeaderArea {
+  background-image: url('../../../assets/apparelImages/smoothroyaltyshirt.jpg');
+}
+
+.blue .rightHeaderArea {
   background-image: url('../../../assets/apparelImages/HeaderPants.png');
-  width: 40%;
-  /* clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%); */
+}
+
+.gold .leftHeaderArea {
+  background-image: url('../../../assets/apparelImages/HeaderJacket.jpg');
+}
+
+.gold .middleHeaderArea {
+  background-image: url('../../../assets/apparelImages/HeaderShoe.jpg');
+}
+
+.gold .rightHeaderArea {
+  background-image: url('../../../assets/apparelImages/HeaderUcla.png');
 }
 
 .gold {
