@@ -4,9 +4,10 @@
   align-items: center;
   flex-direction: column;
   background-color: rgb(247, 247, 247);
+  height: 450px;
   border-radius: 5px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 40px;
   /* border-right: 2px solid black;
   border-left: 2px solid black; */
 }
@@ -17,8 +18,16 @@
 
 .productItem h2 {
   color: var(--maingold);
+  text-align: left;
+  align-self: flex-start;
+}
+
+.productItem p {
+  align-self: flex-start;
 }
 
 .productItem img {
-  width: 60%;
+  /* width: 60%; */
+  height: 250px;
+  margin-bottom: 10px;
 }
