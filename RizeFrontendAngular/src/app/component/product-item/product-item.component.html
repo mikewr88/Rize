@@ -3,7 +3,13 @@
     {{product.name}}
   </h1>
   <img src="../../assets/apparelImages/{{product.imgurl}}">
-  <h2>${{product.price}}</h2>
+  <div class="productInfo">
+    <div>
+      <h2>${{product.price}}</h2>
 
-  <p>{{product.description}}</p>
+      <p>{{product.description}}</p>
+    </div>
+
+    <a href="#" class="productBuyButton">Buy</a>
+  </div>
 </div>
